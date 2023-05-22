@@ -26,3 +26,24 @@ def sum_double(a, b):
     if a == b:
         sum = sum * 2
     return sum
+
+
+def diff21(n):
+    if n > 21:
+        return (n-21)*2
+    else: 
+        return 21-n
+
+
+def makes10(a, b):
+    if a == 10 or b == 10 or a + b == 10:
+        return True
+    else:
+        return False
+
+def near_hundred(n):
+    if abs(n - 100) <= 10 or abs(n - 200) <= 10:
+        return True
+    else:
+        return False
+
