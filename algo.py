@@ -47,3 +47,20 @@ def near_hundred(n):
     else:
         return False
 
+def pos_neg(a, b, negative):
+    if negative:
+        return a < 0 and b < 0
+    else:
+        return (a < 0 and b > 0) or (a > 0 and b < 0)
+
+
+def not_string(s):
+    if s.startswith("not"):
+        return s
+    else:
+        return "not " + s
+
+
+def not_string(s):
+    return s if s.startswith("not") else "not " + s
+
